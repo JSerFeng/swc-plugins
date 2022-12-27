@@ -198,7 +198,9 @@ jobs:
           path: node
 
       - name: List packages
-        run: ls -R .
+        run: |
+          ls -R .
+          ldd --version
         shell: bash
 
       - name: Test bindings
@@ -230,7 +232,9 @@ jobs:
           path: node
 
       - name: List packages
-        run: ls -R .
+        run: |
+          ls -R .
+          ldd --version
         shell: bash
 
       - name: Test bindings
@@ -262,7 +266,9 @@ jobs:
           path: node
 
       - name: List packages
-        run: ls -R .
+        run: |
+          ls -R .
+          ldd --version
         shell: bash
 
       - name: Test bindings
@@ -329,7 +335,9 @@ jobs:
           path: node
 
       - name: List packages
-        run: ls -R .
+        run: |
+          ls -R .
+          ldd --version
         shell: bash
 
       - name: Setup and run tests
@@ -422,7 +430,9 @@ jobs:
         run: pnpm artifacts
 
       - name: List packages
-        run: ls -R ./npm
+        run: |
+          ls -R .
+          ldd --version
         shell: bash
 
       - name: Publish
